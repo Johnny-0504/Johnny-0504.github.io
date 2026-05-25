@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jonathan Klein — Sport Videographer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════ NAV ═══════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">JK</a>
+    <div class="nav-right">
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark/Light Mode">
+        <span class="toggle-icon sun">☀</span>
+        <span class="toggle-icon moon">◑</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════ HERO ══════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-video-wrap">
+      <!-- 
+        ▶ HERO VIDEO AUSTAUSCHEN:
+        Ersetze die src-URL mit deinem eigenen Video (z.B. Cloudinary, Vimeo Direct-Link).
+        Für Vimeo: https://player.vimeo.com/external/[ID].hd.mp4?...
+      -->
+      <!-- Geblurrter Hintergrund für Hochformat-Videos -->
+      <video
+        class="hero-video-bg-blur"
+        autoplay muted loop playsinline
+        poster="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1600&q=80"
+        aria-hidden="true"
+      >
+        <!-- <source src="hero-reel.mp4" type="video/mp4" /> -->
+      </video>
+      <!-- Hauptvideo (scharf, zentriert) -->
+      <video
+        class="hero-video"
+        autoplay muted loop playsinline
+        poster="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1600&q=80"
+      >
+        <!-- <source src="hero-reel.mp4" type="video/mp4" /> -->
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Sport Videographer · Bodensee · Vorarlberg · Zürich</p>
+      <h1 class="hero-title">Jonathan<br /><em>Klein</em></h1>
+      <p class="hero-sub">Sony a7S III &amp; a7S II · Action. Emotion. Frame.</p>
+      <a href="#work" class="hero-cta">View Work</a>
+    </div>
+    <a href="#work" class="scroll-indicator" aria-label="Scroll down">
+      <span class="scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ══════════════════════════════════ WORK ══════════════════════════════════ -->
+  <section class="section work-section" id="work">
+    <div class="section-header">
+      <h2 class="section-title">Work</h2>
+      <p class="section-sub">Highlight Tapes &amp; Production Reels</p>
+    </div>
+
+    <!-- 
+      ════════════════════════════════════════════════════════════
+      ▶ VIDEOS VERWALTEN — SO EINFACH WIE MÖGLICH:
+      Füge neue Videos in der videos.js-Datei hinzu.
+      Dieses Grid wird automatisch neu befüllt.
+      ════════════════════════════════════════════════════════════
+    -->
+    <div class="video-grid" id="videoGrid">
+      <!-- Wird via JS aus videos.js befüllt -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ ABOUT ═════════════════════════════════ -->
+  <section class="section about-section" id="about">
+    <div class="about-inner">
+      <div class="about-text">
+        <h2 class="section-title">About</h2>
+        <p class="about-lead">
+          Ich bin Jonathan, 18 Jahre alt — aufgewachsen zwischen dem Bodensee,
+          Vorarlberg und Zürich. Mit meinem Sony-Setup fange ich die rohe
+          Energie des Sports ein: die Momente vor dem Schuss, nach dem Tackle,
+          mitten im Rausch.
+        </p>
+        <p class="about-body">
+          Bisher durfte ich für Teams in der ELF, GFL, Volleyball-Bundesliga
+          und ÖEL arbeiten — von der Seitenlinie bis in den Schnittroom.
+        </p>
+        <div class="clients">
+          <span class="client-tag">Helvetic Mercenaries · ELF</span>
+          <span class="client-tag">Ravensburg Razorbacks · GFL</span>
+          <span class="client-tag">VfB Friedrichshafen · VBL</span>
+          <span class="client-tag">SC Samina Hohenems · ÖEL</span>
+          <span class="client-tag">OSC Tiger</span>
+        </div>
+      </div>
+      <div class="about-gear">
+        <div class="gear-card">
+          <span class="gear-label">Primary</span>
+          <span class="gear-name">Sony a7S III</span>
+        </div>
+        <div class="gear-card">
+          <span class="gear-label">Secondary</span>
+          <span class="gear-name">Sony a7S II</span>
+        </div>
+        <div class="gear-card">
+          <span class="gear-label">Specialty</span>
+          <span class="gear-name">Low Light · Action · Sports</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ CONTACT ═════════════════════════════════ -->
+  <section class="section contact-section" id="contact">
+    <div class="contact-inner">
+      <h2 class="section-title">Let's Work<br /><em>Together</em></h2>
+      <p class="contact-sub">Anfragen, Kollaborationen, Buchungen</p>
+      <div class="contact-links">
+        <a href="mailto:klein.jonat@gmail.com" class="contact-btn">
+          <span class="contact-icon">✉</span>
+          klein.jonat@gmail.com
+        </a>
+        <a href="https://instagram.com/Johnny_0504" target="_blank" rel="noopener" class="contact-btn">
+          <span class="contact-icon">◈</span>
+          @Johnny_0504
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ FOOTER ══════════════════════════════════ -->
+  <footer class="footer">
+    <span>© 2025 Jonathan Klein</span>
+    <span>Sport Videographer</span>
+  </footer>
+
+  <!-- ══════════════════════════════════ MODAL ═════════════════════════════════ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Schließen">✕</button>
+      <div class="modal-video-wrap" id="modalVideoWrap"></div>
+      <div class="modal-info">
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <p class="modal-client" id="modalClient"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="videos.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
